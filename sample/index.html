@@ -28,9 +28,7 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	// import CustomEditor from '../src/ckeditor';
-
-	CustomEditor.create( document.querySelector( '#editor' ) )
+	PrikidEditor.create( document.querySelector( '#editor' ) )
 		.then( editor => {
 			window.editor = editor;
 		} )

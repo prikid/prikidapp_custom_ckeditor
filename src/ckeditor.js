@@ -37,11 +37,11 @@ import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 
-export default class CustomEditor extends ClassicEditorBase {
+export default class PrikidEditor extends ClassicEditorBase {
 }
 
 // Plugins to include in the build.
-CustomEditor.builtinPlugins = [
+PrikidEditor.builtinPlugins = [
 	Essentials,
 	// UploadAdapter,
 	Autoformat,
@@ -74,7 +74,7 @@ CustomEditor.builtinPlugins = [
 ];
 
 // Editor configuration.
-CustomEditor.defaultConfig = {
+PrikidEditor.defaultConfig = {
 	/* toolbar: {
 		items: [
 			'heading',

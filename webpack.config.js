@@ -29,7 +29,7 @@ const config = {
 
 	output: {
 		// The name under which the editor will be exported.
-		library: 'CustomEditor',
+		library: 'PrikidEditor',
 
 		path: path.resolve( __dirname, 'build' ),
 		filename: 'ckeditor.js',
