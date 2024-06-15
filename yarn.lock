@@ -338,7 +338,7 @@
     "@ckeditor/ckeditor5-widget" "41.4.2"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-cloud-services@41.4.2":
+"@ckeditor/ckeditor5-cloud-services@41.4.2", "@ckeditor/ckeditor5-cloud-services@^41.4.2":
   version "41.4.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-cloud-services/-/ckeditor5-cloud-services-41.4.2.tgz#32b59caf9025b06e5556c71fadde1c4190ba42ba"
   integrity sha512-rgDrpEonA2AchfvgYaeb/olMk/HYxUK4B8XPqs+nJxLmBraTv2lANsgsMbwsqAIiRjT9MknmJdX+CEbqljgL/w==
@@ -775,11 +775,6 @@
   integrity sha512-VgLr2eLVggyhDqa7H8JUxpnOLTZ0R/YuDZ6ENVUumd9q4VrpNs94ZK0Y/Shp7UmuHQ/sTth+PWTsi+t5KwYqeQ==
   dependencies:
     lodash-es "4.17.21"
-
-"@ckeditor/ckeditor5-vue2@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-vue2/-/ckeditor5-vue2-3.0.1.tgz#302e5773b31f1455973806d5c6002dd1b3db70ee"
-  integrity sha512-vS9ffP3rOFgM8oeG9XVFD+UtcYAhkgFDfBHjswJuCgUM0Iw8uqLlCiDPbs4PeJsend8GcmmtNeFdcQaSPkOtpw==
 
 "@ckeditor/ckeditor5-watchdog@41.4.2", "@ckeditor/ckeditor5-watchdog@^41.4.2":
   version "41.4.2"

@@ -36,6 +36,7 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import {CloudServices} from '@ckeditor/ckeditor5-cloud-services';
 
 export default class ClassicEditor extends ClassicEditorBase {
 }
@@ -44,6 +45,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 ClassicEditor.builtinPlugins = [
 	Essentials,
 	// UploadAdapter,
+	CloudServices,
 	Autoformat,
 	Bold,
 	Italic,
