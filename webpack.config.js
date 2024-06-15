@@ -109,18 +109,18 @@ const config = {
 	// }
 };
 
-config.module.rules.forEach( ( rule ) => {
-	if (rule.test.toString() === targetSVG.toString()) {
-		rule.exclude = CKERegex.svg;
-	}
-
-	if (rule.test.toString() === targetFont.toString()) {
-		rule.exclude = CKERegex.svg;
-	}
-
-	if (rule.test.toString() === targetCSS.toString()) {
-		rule.exclude = CKERegex.css;
-	}
-} );
+// config.module.rules.forEach( ( rule ) => {
+// 	if (rule.test.toString() === targetSVG.toString()) {
+// 		rule.exclude = CKERegex.svg;
+// 	}
+//
+// 	if (rule.test.toString() === targetFont.toString()) {
+// 		rule.exclude = CKERegex.svg;
+// 	}
+//
+// 	if (rule.test.toString() === targetCSS.toString()) {
+// 		rule.exclude = CKERegex.css;
+// 	}
+// } );
 
 module.exports = config;
