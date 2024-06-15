@@ -17,9 +17,6 @@ const CKERegex = {
 	svg: /ckeditor5-[^/\\]+[/\\]theme[/\\]icons[/\\][^/\\]+\.svg$/,
 	css: /ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css/
 };
-const targetSVG = /(\.(png|jpe?g|gif|webp|avif)$|^((?!font).)*\.svg$)/;
-const targetFont = /(\.(woff2?|ttf|eot|otf)$|font.*\.svg$)/;
-const targetCSS = /\.p?css$/;
 
 const config = {
 	devtool: 'source-map',
@@ -100,27 +97,6 @@ const config = {
 			}
 		]
 	}
-	// resolve: {
-	// 	fallback: {
-	// 		"fs": false,
-	// 		"path": false,
-	// 		"os": false,
-	// 	},
-	// }
 };
-
-// config.module.rules.forEach( ( rule ) => {
-// 	if (rule.test.toString() === targetSVG.toString()) {
-// 		rule.exclude = CKERegex.svg;
-// 	}
-//
-// 	if (rule.test.toString() === targetFont.toString()) {
-// 		rule.exclude = CKERegex.svg;
-// 	}
-//
-// 	if (rule.test.toString() === targetCSS.toString()) {
-// 		rule.exclude = CKERegex.css;
-// 	}
-// } );
 
 module.exports = config;
