@@ -1,2 +1,9 @@
 node_modules/
 package-lock.json
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/prikidapp_custom_ckeditor.iml
+/.idea/vcs.xml
