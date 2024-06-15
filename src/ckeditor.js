@@ -4,7 +4,7 @@
  */
 
 // The editor creator to use.
-import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
+// import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 // import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
@@ -36,108 +36,108 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import {CloudServices} from '@ckeditor/ckeditor5-cloud-services';
+import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
 
-export default class ClassicEditor extends ClassicEditorBase {
-}
-
-// Plugins to include in the build.
-ClassicEditor.builtinPlugins = [
-	Essentials,
-	// UploadAdapter,
-	CloudServices,
-	Autoformat,
-	Bold,
-	Italic,
-	// BlockQuote,
-	// CKFinder,
-	// EasyImage,
-	Heading,
-	// Image,
-	// ImageCaption,
-	// ImageStyle,
-	// ImageToolbar,
-	// ImageUpload,
-	Indent,
-	Link,
-	List,
-	MediaEmbed,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar,
-	TextTransformation,
-	Alignment,
-	Underline,
-	Strikethrough,
-	IndentBlock,
-	Font,
-	RemoveFormat
-];
+class CustomEditor extends ClassicEditor {
+	static builtinPlugins = [
+		Essentials,
+		// UploadAdapter,
+		Autoformat,
+		Bold,
+		Italic,
+		// BlockQuote,
+		// CKFinder,
+		// EasyImage,
+		Heading,
+		// Image,
+		// ImageCaption,
+		// ImageStyle,
+		// ImageToolbar,
+		// ImageUpload,
+		Indent,
+		Link,
+		List,
+		MediaEmbed,
+		Paragraph,
+		PasteFromOffice,
+		Table,
+		TableToolbar,
+		TextTransformation,
+		Alignment,
+		Underline,
+		Strikethrough,
+		IndentBlock,
+		Font,
+		RemoveFormat
+	];
 
 // Editor configuration.
-ClassicEditor.defaultConfig = {
-	/* toolbar: {
-		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	}, */
+	static defaultConfig = {
+		/* toolbar: {
+			items: [
+				'heading',
+				'|',
+				'bold',
+				'italic',
+				'link',
+				'bulletedList',
+				'numberedList',
+				'|',
+				'indent',
+				'outdent',
+				'|',
+				'imageUpload',
+				'blockQuote',
+				'insertTable',
+				'mediaEmbed',
+				'undo',
+				'redo'
+			]
+		},
+		image: {
+			toolbar: [
+				'imageStyle:full',
+				'imageStyle:side',
+				'|',
+				'imageTextAlternative'
+			]
+		},
+		table: {
+			contentToolbar: [
+				'tableColumn',
+				'tableRow',
+				'mergeTableCells'
+			]
+		}, */
 
-	fontSize: {
-		options: [ 9, 10, 11, 12, 14, 'default', 16, 18, 24, 36, 48 ],
-		supportAllValues: true
-	},
+		fontSize: {
+			options: [ 9, 10, 11, 12, 14, 'default', 16, 18, 24, 36, 48 ],
+			supportAllValues: true
+		},
 
-	toolbar: {
-		items: [
-			'mediaEmbed',
-			'heading', 'bold', 'italic', 'underline', 'strikethrough',
-			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
-			'alignment', 'outdent', 'indent',
-			'numberedList', 'bulletedList',
-			'link', 'insertTable',
-			'removeFormat', 'undo', 'redo'
-		]
-	},
+		toolbar: {
+			items: [
+				'mediaEmbed',
+				'heading', 'bold', 'italic', 'underline', 'strikethrough',
+				'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
+				'alignment', 'outdent', 'indent',
+				'numberedList', 'bulletedList',
+				'link', 'insertTable',
+				'removeFormat', 'undo', 'redo'
+			]
+		},
 
-	mediaEmbed: {
-		previewsInData: true
-	},
+		mediaEmbed: {
+			previewsInData: true
+		},
 
-	table: {
-		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
-};
+		table: {
+			contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ]
+		},
+		// This value must be kept in sync with the language defined in webpack.config.js.
+		language: 'en'
+	};
+
+}
+
+export default CustomEditor;

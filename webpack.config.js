@@ -30,7 +30,7 @@ const config = {
 
 	output: {
 		// The name under which the editor will be exported.
-		library: 'ClassicEditor',
+		library: 'CustomEditor',
 
 		path: path.resolve(__dirname, 'build'),
 		filename: 'ckeditor.js',
