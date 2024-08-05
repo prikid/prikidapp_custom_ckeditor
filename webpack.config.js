@@ -12,6 +12,8 @@ const webpack = require( 'webpack' );
 const CKEStyles = require( '@ckeditor/ckeditor5-dev-utils' ).styles;
 const CKEditorWebpackPlugin = require( '@ckeditor/ckeditor5-dev-webpack-plugin' );
 const TerserPlugin = require( 'terser-webpack-plugin' );
+const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
+const CssMinimizerPlugin = require( 'css-minimizer-webpack-plugin' );
 
 const CKERegex = {
 	svg: /ckeditor5-[^/\\]+[/\\]theme[/\\]icons[/\\][^/\\]+\.svg$/,
@@ -44,7 +46,8 @@ const config = {
 					}
 				},
 				extractComments: false
-			} )
+			} ),
+			new CssMinimizerPlugin()
 		]
 	},
 
@@ -55,6 +58,10 @@ const config = {
 			language: 'en',
 			// additionalLanguages: 'all',
 			addMainLanguageTranslationsToAllAssets: true
+		} ),
+
+		new MiniCssExtractPlugin( {
+			filename: 'content.min.css'
 		} )
 
 		// new webpack.BannerPlugin( {
@@ -65,6 +72,13 @@ const config = {
 
 	module: {
 		rules: [
+			{
+				test: /index-content\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader'
+				]
+			},
 			{
 				test: CKERegex.svg,
 				use: [ 'raw-loader' ]

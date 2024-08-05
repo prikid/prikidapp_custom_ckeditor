@@ -41,6 +41,25 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
+// we need to import content CSS files to compile a content.css for using outside the editor
+import '@ckeditor/ckeditor5-image/dist/index-content.css';
+import '@ckeditor/ckeditor5-essentials/dist/index-content.css';
+import '@ckeditor/ckeditor5-autoformat/dist/index-content.css';
+import '@ckeditor/ckeditor5-basic-styles/dist/index-content.css';
+import '@ckeditor/ckeditor5-heading/dist/index-content.css';
+import '@ckeditor/ckeditor5-link/dist/index-content.css';
+import '@ckeditor/ckeditor5-indent/dist/index-content.css';
+import '@ckeditor/ckeditor5-list/dist/index-content.css';
+import '@ckeditor/ckeditor5-media-embed/dist/index-content.css';
+import '@ckeditor/ckeditor5-paragraph/dist/index-content.css';
+import '@ckeditor/ckeditor5-paste-from-office/dist/index-content.css';
+import '@ckeditor/ckeditor5-table/dist/index-content.css';
+import '@ckeditor/ckeditor5-typing/dist/index-content.css';
+import '@ckeditor/ckeditor5-alignment/dist/index-content.css';
+import '@ckeditor/ckeditor5-font/dist/index-content.css';
+import '@ckeditor/ckeditor5-remove-format/dist/index-content.css';
+import '@ckeditor/ckeditor5-upload/dist/index-content.css';
+
 export default class PrikidEditor extends ClassicEditorBase {
 }
 
