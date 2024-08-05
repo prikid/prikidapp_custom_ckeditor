@@ -61,7 +61,7 @@ const config = {
 		} ),
 
 		new MiniCssExtractPlugin( {
-			filename: 'content.min.css'
+			filename: 'ckeditor_content.min.css'
 		} )
 
 		// new webpack.BannerPlugin( {
