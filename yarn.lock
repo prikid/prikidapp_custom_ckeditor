@@ -238,10 +238,10 @@
     "@ckeditor/ckeditor5-watchdog" "42.0.2"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-dev-translations@^40.2.1":
-  version "40.2.1"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-translations/-/ckeditor5-dev-translations-40.2.1.tgz#5ff05cbf68b575fa8d87a347f3dc3e72a866a4e3"
-  integrity sha512-KWKJ9nmobLyfOtsTdRx0P+IqT4WvNBwiRWJ8/FCRxjqPsaECwVlomb6zS8l5yuByaYVodMIVe6uWiH5E6SOZrQ==
+"@ckeditor/ckeditor5-dev-translations@^42.0.0":
+  version "42.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-translations/-/ckeditor5-dev-translations-42.0.0.tgz#e5f6215c20f49cdd5088ff3f0127dd53a3c1872e"
+  integrity sha512-qdme0GXrefAH+7hpBNRnU7nxXsUWvrLrc/AnbsWr+4pjsoU4NXHHdjLqJdlQE0u371LlYjj+HYZ/V50NdeHzIw==
   dependencies:
     "@babel/parser" "^7.18.9"
     "@babel/traverse" "^7.18.9"
@@ -249,34 +249,6 @@
     pofile "^1.0.9"
     rimraf "^3.0.2"
     webpack-sources "^2.0.1"
-
-"@ckeditor/ckeditor5-dev-utils@40.2.1":
-  version "40.2.1"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-40.2.1.tgz#268f2f7e3eecbe98999846e2f15a8765975547f0"
-  integrity sha512-hHaLuDY/UALx19XOQG6x6tH3RXEhl/955TFkviFf1ZYrwGLN56hRcFY/Bc4I4RalSph+9Yrs5dPdNtuwx+Tzvw==
-  dependencies:
-    "@ckeditor/ckeditor5-dev-translations" "^40.2.1"
-    chalk "^3.0.0"
-    cli-cursor "^3.1.0"
-    cli-spinners "^2.6.1"
-    css-loader "^5.2.7"
-    cssnano "^6.0.3"
-    del "^5.0.0"
-    esbuild-loader "~3.0.1"
-    fs-extra "^9.1.0"
-    is-interactive "^1.0.0"
-    javascript-stringify "^1.6.0"
-    mini-css-extract-plugin "^2.4.2"
-    postcss "^8.4.12"
-    postcss-import "^14.1.0"
-    postcss-loader "^4.3.0"
-    postcss-mixins "^9.0.2"
-    postcss-nesting "^10.1.4"
-    raw-loader "^4.0.1"
-    shelljs "^0.8.1"
-    style-loader "^2.0.0"
-    terser-webpack-plugin "^4.2.3"
-    through2 "^3.0.1"
 
 "@ckeditor/ckeditor5-dev-utils@^31.1.13":
   version "31.1.13"
@@ -307,6 +279,34 @@
     terser-webpack-plugin "^4.2.3"
     through2 "^3.0.1"
     ts-loader "^9.3.0"
+
+"@ckeditor/ckeditor5-dev-utils@^42.0.0":
+  version "42.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-utils/-/ckeditor5-dev-utils-42.0.0.tgz#daf83462d3ce743d454722b118ed0b0493d9a808"
+  integrity sha512-zfzTnKN6uZmRK+4uXgVY5eWajxeXGirMK2Yac8HsQVankTfQkhA1UZCeJMFOWJIU3SUqbEVTL9Rg5XvieZjc7Q==
+  dependencies:
+    "@ckeditor/ckeditor5-dev-translations" "^42.0.0"
+    chalk "^3.0.0"
+    cli-cursor "^3.1.0"
+    cli-spinners "^2.6.1"
+    css-loader "^5.2.7"
+    cssnano "^6.0.3"
+    del "^5.0.0"
+    esbuild-loader "~3.0.1"
+    fs-extra "^9.1.0"
+    is-interactive "^1.0.0"
+    javascript-stringify "^1.6.0"
+    mini-css-extract-plugin "^2.4.2"
+    postcss "^8.4.12"
+    postcss-import "^14.1.0"
+    postcss-loader "^4.3.0"
+    postcss-mixins "^9.0.2"
+    postcss-nesting "^10.1.4"
+    raw-loader "^4.0.1"
+    shelljs "^0.8.1"
+    style-loader "^2.0.0"
+    terser-webpack-plugin "^4.2.3"
+    through2 "^3.0.1"
 
 "@ckeditor/ckeditor5-dev-webpack-plugin@^31.1.13":
   version "31.1.13"
@@ -496,7 +496,7 @@
     ckeditor5 "42.0.2"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-image@42.0.2":
+"@ckeditor/ckeditor5-image@42.0.2", "@ckeditor/ckeditor5-image@^42.0.2":
   version "42.0.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-image/-/ckeditor5-image-42.0.2.tgz#ae3b7de41d44d09bc795a48b1e1b24a5d5528386"
   integrity sha512-RH1r10rsnEFSBNBXe3d02J6JDvoLKxwz/KCvC/EoOR4UEKDe0FNodt3+VZrb0JNqkBUIxqdtvEobXb6YmGQaDQ==

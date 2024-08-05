@@ -28,7 +28,7 @@
         "@ckeditor/ckeditor5-alignment": "^42.0.2",
         "@ckeditor/ckeditor5-autoformat": "^42.0.2",
         "@ckeditor/ckeditor5-basic-styles": "^42.0.2",
-        "@ckeditor/ckeditor5-dev-utils": "40.2.1",
+        "@ckeditor/ckeditor5-dev-utils": "^42.0.0",
         "@ckeditor/ckeditor5-dev-webpack-plugin": "^31.1.13",
         "@ckeditor/ckeditor5-editor-classic": "^42.0.2",
         "@ckeditor/ckeditor5-essentials": "^42.0.2",
@@ -45,6 +45,7 @@
         "@ckeditor/ckeditor5-theme-lark": "^42.0.2",
         "@ckeditor/ckeditor5-typing": "^42.0.2",
         "@ckeditor/ckeditor5-upload": "^42.0.2",
+        "@ckeditor/ckeditor5-undo": "^42.0.2",
         "@ckeditor/ckeditor5-watchdog": "^42.0.2",
         "css-minimizer-webpack-plugin": "^7.0.0",
         "eslint": "^9.5.0",
@@ -95,5 +96,8 @@
         "hooks": {
             "pre-commit": "lint-staged"
         }
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-image": "^42.0.2"
     }
 }

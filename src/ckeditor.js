@@ -15,8 +15,6 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 // import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 // import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
-
-import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
@@ -59,83 +57,72 @@ import '@ckeditor/ckeditor5-alignment/dist/index-content.css';
 import '@ckeditor/ckeditor5-font/dist/index-content.css';
 import '@ckeditor/ckeditor5-remove-format/dist/index-content.css';
 import '@ckeditor/ckeditor5-upload/dist/index-content.css';
+import {
+	AutoImage,
+	ImageBlock,
+	ImageInline,
+	ImageInsert,
+	ImageInsertViaUrl,
+	ImageResizeEditing,
+	ImageResizeHandles, ImageTextAlternative
+} from '@ckeditor/ckeditor5-image';
+import { TableCaption, TableCellProperties, TableColumnResize, TableProperties } from '@ckeditor/ckeditor5-table';
+import { Undo } from '@ckeditor/ckeditor5-undo';
 
 export default class PrikidEditor extends ClassicEditorBase {
 }
 
 // Plugins to include in the build.
 PrikidEditor.builtinPlugins = [
+	AutoImage,
 	Essentials,
-	// UploadAdapter,
 	SimpleUploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
 	// BlockQuote,
-	// CKFinder,
-	// EasyImage,
 	Heading,
-	Image,
+
+	ImageBlock,
 	ImageCaption,
+	ImageInline,
+	ImageInsert,
+	ImageInsertViaUrl,
 	ImageStyle,
+	ImageTextAlternative,
 	ImageToolbar,
 	ImageUpload,
+	ImageResizeEditing,
+	ImageResizeHandles,
 	LinkImage,
+
 	Indent,
 	Link,
 	List,
 	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
+
 	Table,
+	TableCaption,
+	TableCellProperties,
+	TableColumnResize,
+	TableProperties,
 	TableToolbar,
+
 	TextTransformation,
 	Alignment,
 	Underline,
 	Strikethrough,
 	IndentBlock,
 	Font,
-	RemoveFormat
+	RemoveFormat,
+
+	Undo
 ];
 
 // Editor configuration.
 PrikidEditor.defaultConfig = {
-	/* toolbar: {
-		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	}, */
 
 	fontSize: {
 		options: [ 9, 10, 11, 12, 14, 'default', 16, 18, 24, 36, 48 ],
@@ -160,19 +147,14 @@ PrikidEditor.defaultConfig = {
 
 	image: {
 		toolbar: [
-			'imageStyle:block',
-			'imageStyle:side',
+			'imageStyle:inline',
+			'imageStyle:wrapText',
+			'imageStyle:breakText',
 			'|',
+			'linkImage',
 			'toggleImageCaption',
 			'imageTextAlternative',
-			'|',
-			'linkImage'
-		],
-		insert: {
-			// If this setting is omitted, the editor defaults to 'block'.
-			// See explanation below.
-			type: 'auto'
-		}
+		]
 	},
 
 	table: {
