@@ -69,7 +69,7 @@ import {
 } from '@ckeditor/ckeditor5-image';
 import { TableCaption, TableCellProperties, TableColumnResize, TableProperties } from '@ckeditor/ckeditor5-table';
 import { Undo } from '@ckeditor/ckeditor5-undo';
-import FullScreen from '@pikulinpw/ckeditor5-fullscreen';
+import FullScreen from 'ckeditor5-full-screen/src/fullscreen';
 
 export default class PrikidEditor extends ClassicEditorBase {
 }
@@ -122,7 +122,7 @@ PrikidEditor.builtinPlugins = [
 
 	Undo,
 
-	FullScreen // TODO Fork the package and fix bugs with the button
+	FullScreen
 ];
 
 // Editor configuration.
@@ -135,7 +135,7 @@ PrikidEditor.defaultConfig = {
 
 	toolbar: {
 		items: [
-			'fullScreen',
+			'fullscreen',
 			'mediaEmbed', 'insertImage',
 			'heading', 'bold', 'italic', 'underline', 'strikethrough',
 			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
@@ -158,7 +158,7 @@ PrikidEditor.defaultConfig = {
 			'|',
 			'linkImage',
 			'toggleImageCaption',
-			'imageTextAlternative',
+			'imageTextAlternative'
 		]
 	},
 
