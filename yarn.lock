@@ -228,7 +228,7 @@
     ckeditor5 "42.0.2"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-core@42.0.2":
+"@ckeditor/ckeditor5-core@42.0.2", "@ckeditor/ckeditor5-core@>=27.1.0", "@ckeditor/ckeditor5-core@^42.0.2":
   version "42.0.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-core/-/ckeditor5-core-42.0.2.tgz#64894c4a09a2b5b5134c53e6add5d49f3439bd88"
   integrity sha512-LkNx1Qpk/gwh0wYkl4FdZfi1N2G5Gmp026sVp301boyE9sSVeR3YxcSdKXfsr2HII+7EdJHxMswTvnd/L+IdSg==
@@ -747,7 +747,7 @@
     "@ckeditor/ckeditor5-utils" "42.0.2"
     lodash-es "4.17.21"
 
-"@ckeditor/ckeditor5-ui@42.0.2":
+"@ckeditor/ckeditor5-ui@42.0.2", "@ckeditor/ckeditor5-ui@>=27.1.0", "@ckeditor/ckeditor5-ui@^42.0.2":
   version "42.0.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-ui/-/ckeditor5-ui-42.0.2.tgz#27b0700aad4af5dd549f50a82baf1ed37e2c6b33"
   integrity sha512-Lrej61+xTTqIJSlA9FfqwpEClVoRabM3na8MDiWjAzneQkPgFtw1WTgUKvxNaI+eMXCmT/HVNj/RCg9vqt0pug==
@@ -759,7 +759,7 @@
     lodash-es "4.17.21"
     vanilla-colorful "0.7.2"
 
-"@ckeditor/ckeditor5-undo@42.0.2":
+"@ckeditor/ckeditor5-undo@42.0.2", "@ckeditor/ckeditor5-undo@^42.0.2":
   version "42.0.2"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-undo/-/ckeditor5-undo-42.0.2.tgz#e5b76de4db0d73eb1a80c18ee1a3217fcb7b8897"
   integrity sha512-OpfdYnADY2MM8nWN5M13BEDDnwL15YHUYUpgMnydgJObZzSnePqgWQSFaBAY5j24eze0a8gyGgnOE5jV6VBm1Q==
@@ -1129,6 +1129,14 @@
   dependencies:
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
+
+"@pikulinpw/ckeditor5-fullscreen@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pikulinpw/ckeditor5-fullscreen/-/ckeditor5-fullscreen-1.0.1.tgz#9dc13754b91289f0e63dfb0d68e70821072ed8e8"
+  integrity sha512-11ojcOQOJWOYaI1+CpM78JYduQsOedZkZLGVX/HFsDRuMLFSfQmhPYrwG+8R2YuinhS3RxnDK5Z9SjrqkQV8KQ==
+  dependencies:
+    "@ckeditor/ckeditor5-core" ">=27.1.0"
+    "@ckeditor/ckeditor5-ui" ">=27.1.0"
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"

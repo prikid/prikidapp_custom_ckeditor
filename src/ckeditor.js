@@ -57,6 +57,7 @@ import '@ckeditor/ckeditor5-alignment/dist/index-content.css';
 import '@ckeditor/ckeditor5-font/dist/index-content.css';
 import '@ckeditor/ckeditor5-remove-format/dist/index-content.css';
 import '@ckeditor/ckeditor5-upload/dist/index-content.css';
+
 import {
 	AutoImage,
 	ImageBlock,
@@ -68,6 +69,7 @@ import {
 } from '@ckeditor/ckeditor5-image';
 import { TableCaption, TableCellProperties, TableColumnResize, TableProperties } from '@ckeditor/ckeditor5-table';
 import { Undo } from '@ckeditor/ckeditor5-undo';
+import FullScreen from '@pikulinpw/ckeditor5-fullscreen';
 
 export default class PrikidEditor extends ClassicEditorBase {
 }
@@ -118,7 +120,9 @@ PrikidEditor.builtinPlugins = [
 	Font,
 	RemoveFormat,
 
-	Undo
+	Undo,
+
+	FullScreen
 ];
 
 // Editor configuration.
@@ -131,6 +135,7 @@ PrikidEditor.defaultConfig = {
 
 	toolbar: {
 		items: [
+			'fullScreen',
 			'mediaEmbed', 'insertImage',
 			'heading', 'bold', 'italic', 'underline', 'strikethrough',
 			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
