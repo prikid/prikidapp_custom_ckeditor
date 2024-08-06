@@ -50,7 +50,6 @@
         "@ckeditor/ckeditor5-undo": "^42.0.2",
         "@ckeditor/ckeditor5-upload": "^42.0.2",
         "@ckeditor/ckeditor5-watchdog": "^42.0.2",
-        "ckeditor5-full-screen": "./ckeditor5-full-screen-0.0.2.tgz",
         "css-loader": "^7.1.2",
         "css-minimizer-webpack-plugin": "^7.0.0",
         "eslint": "^9.5.0",
@@ -102,5 +101,8 @@
         "hooks": {
             "pre-commit": "lint-staged"
         }
+    },
+    "dependencies": {
+        "@pikulinpw/ckeditor5-fullscreen": "^1.0.1"
     }
 }
