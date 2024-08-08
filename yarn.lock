@@ -1712,9 +1712,9 @@ ci-info@^3.2.0:
   resolved "https://registry.npmjs.org/ci-info/-/ci-info-3.9.0.tgz"
   integrity sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==
 
-ckeditor5-full-screen@./ckeditor5-full-screen/ckeditor5-full-screen-0.0.2.tgz:
+"ckeditor5-full-screen@https://github.com/prikid/ckeditor5-full-screen.git":
   version "0.0.2"
-  resolved "./ckeditor5-full-screen/ckeditor5-full-screen-0.0.2.tgz#3a46e11fbe7226d4fd7ff3a99d27118935ab6557"
+  resolved "https://github.com/prikid/ckeditor5-full-screen.git#b996d3e445908406fc46e74b0df8a98a4473d047"
   dependencies:
     ckeditor5 "^42.0.2"
 
