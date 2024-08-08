@@ -1714,7 +1714,7 @@ ci-info@^3.2.0:
 
 "ckeditor5-full-screen@https://github.com/prikid/ckeditor5-full-screen.git":
   version "0.0.2"
-  resolved "https://github.com/prikid/ckeditor5-full-screen.git#870b29cac52be89eeab651c97cb75dee66988f5a"
+  resolved "https://github.com/prikid/ckeditor5-full-screen.git#b7c2af11faef2b315ee493c6727a524099cbd407"
   dependencies:
     ckeditor5 "^42.0.2"
 
