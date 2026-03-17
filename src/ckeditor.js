@@ -14,6 +14,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 // import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 // import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 // import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -38,6 +39,7 @@ import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 // we need to import content CSS files to compile a content.css for using outside the editor
 import '@ckeditor/ckeditor5-image/dist/index-content.css';
@@ -122,7 +124,8 @@ PrikidEditor.builtinPlugins = [
 
 	Undo,
 
-	FullScreen
+	FullScreen,
+	HtmlEmbed
 ];
 
 // Editor configuration.
@@ -142,7 +145,9 @@ PrikidEditor.defaultConfig = {
 			'alignment', 'outdent', 'indent',
 			'numberedList', 'bulletedList',
 			'link', 'insertTable',
-			'removeFormat', 'undo', 'redo'
+			'removeFormat', 'undo', 'redo',
+			'htmlEmbed'
+
 		]
 	},
 

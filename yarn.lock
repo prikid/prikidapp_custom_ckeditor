@@ -442,7 +442,7 @@
     "@ckeditor/ckeditor5-widget" "42.0.2"
     ckeditor5 "42.0.2"
 
-"@ckeditor/ckeditor5-html-embed@42.0.2":
+"@ckeditor/ckeditor5-html-embed@42.0.2", "@ckeditor/ckeditor5-html-embed@^42.0.2":
   version "42.0.2"
   resolved "https://registry.npmjs.org/@ckeditor/ckeditor5-html-embed/-/ckeditor5-html-embed-42.0.2.tgz"
   integrity sha512-aqCV9vQJd6KiYsTEW6UlWtyMTZgXI2oHK7/1p8WUagabHU1ZFT+jkExC8QG9n0M76Sq9TIynqBlfl4OOijT6NQ==
